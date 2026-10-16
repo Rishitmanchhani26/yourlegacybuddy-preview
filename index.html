@@ -687,6 +687,16 @@ body{--opening-header-height:72px;--opening-trust-height:90px}
 .lightbox img{grid-row:2;max-height:100%;max-width:100%;height:auto;width:auto;min-height:0;object-fit:contain;user-select:none;-webkit-user-select:none;-webkit-user-drag:none}
 .lightbox .gallery-controls{position:static;grid-row:3;transform:none;margin:0;gap:20px;padding-bottom:env(safe-area-inset-bottom)}
 @media(max-width:760px){.lightbox{padding:18px 12px 14px;gap:14px}.lightbox .gallery-title{font-size:18px;line-height:1.35;padding:0 44px 0 4px;text-align:left}.lightbox .gallery-controls{gap:16px}.lightbox img{max-height:100%;max-width:100%;height:auto;width:auto}.gallery-nav{min-width:92px;min-height:46px}}
+
+/* Consistent consultation buttons under benefits and framework. */
+#benefits .section-cta .btn,.framework-copy .hero-actions .btn{display:inline-flex;align-items:center;justify-content:center;min-height:62px;max-width:100%;padding:12px 26px;border-radius:999px;font-size:17px;line-height:1.35;text-align:center}
+#benefits .section-cta .btn small,.framework-copy .hero-actions .btn small{font-size:14px;line-height:1.4;margin-top:4px}
+#benefits .section-cta{margin-top:26px}
+@media(max-width:760px){
+ #benefits .section-cta{width:100%;margin-top:24px}
+ #benefits .section-cta .btn,.framework-copy .hero-actions .btn{display:flex;width:100%;min-height:64px;padding:12px 18px;margin:0;border-radius:999px;font-size:17px;box-sizing:border-box}
+ #benefits .section-cta .btn small,.framework-copy .hero-actions .btn small{font-size:14px}
+}
 </style><script id="reload-to-top">
 (function () {
   var entry = performance.getEntriesByType('navigation')[0];
