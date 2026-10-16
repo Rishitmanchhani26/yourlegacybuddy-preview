@@ -648,6 +648,15 @@ body{--opening-header-height:72px;--opening-trust-height:90px}
 .footer-copy .socials{margin:0;gap:0 14px}
 @media(max-width:760px){.footer-grid>.footer-identity:first-child{grid-template-columns:106px minmax(0,1fr);gap:16px}.footer-logo{width:106px}.footer .footer-logo img{height:150px}.footer-brand-text>span{font-size:23px}.footer-brand-text small{font-size:10px;letter-spacing:.6px}.footer-copy{gap:10px}}
 @media(max-width:360px){.footer-grid>.footer-identity:first-child{grid-template-columns:88px minmax(0,1fr);gap:14px}.footer-logo{width:88px}.footer .footer-logo img{height:130px}.footer-brand-text>span{font-size:21px}}
+
+/* Keep service amounts in a consistent right-hand column on phones. */
+@media(max-width:760px){
+ .offer-contents li{display:grid;grid-template-columns:16px minmax(0,1fr) auto;gap:8px;align-items:start}
+ .offer-contents li>div{grid-column:2;min-width:0}
+ .offer-contents li>.offer-item-value{grid-column:3;grid-row:1;justify-self:end;text-align:right;white-space:nowrap;font-size:20px;line-height:1.4}
+ .offer-contents li:last-child .offer-item-value{grid-column:3;max-width:100px;white-space:normal;font-size:14px;line-height:1.5;text-align:right}
+}
+@media(max-width:360px){.offer-contents li{gap:6px}.offer-contents li>.offer-item-value{font-size:18px}.offer-contents li:last-child .offer-item-value{max-width:78px;font-size:13px}}
 </style><script id="reload-to-top">
 (function () {
   var entry = performance.getEntriesByType('navigation')[0];
